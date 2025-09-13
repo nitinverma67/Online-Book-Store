@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Saraswati book store</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <h1 class="logo" style="font-family: cursive;">Saraswati Book Store</h1>
+                <ul>
+                    <li><button id="home-btn" class="nav-btn active">Home</button></li>
+                    <li><button id="login-btn" class="nav-btn">Login</button></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="home" class="active">
+            <div class="hero">
+                <h2 style="font-family: cursive;"> Welcome to Saraswati Book Store</h2>
+                <p style="font-family: cursive;">Saraswati Online Book Store offers a wide range of books with great prices, fast delivery, and excellent service for every reader.</p>
+                <div class="search-main">
+                    <input type="text" id="mainSearchBox" placeholder="Search across all books..." />
+                </div>
+            </div>
+
+            <div class="section-header">
+                <h3 style="font-family: cursive;">Available Books</h3>
+                <div class="search-filter-bar">
+                    <input type="text" id="searchBox" placeholder="Search by title or author..." />
+                    <select id="genreFilter">
+                        <option value="all">All</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="stories">Stories</option>
+                        <option value="technology">Technology</option>
+                        <option value="poetry">Poetry</option>
+                        <option value="scifi">Sci-Fi</option>
+                        <option value="political-thought">political-thought</option>
+                        <option value="comic">Comic</option>
+                        <option value="horror">Horrer</option>
+                        <option value="philosophy">Philosophy</option>
+                        <option value="history">history</option>
+                        <option value="educational">Educational</option>
+                        <option value="autobiography">c</option>
+                    </select>
+                </div>
+            </div>
+        
+            </div>
+            <div class="book-grid">
+                <div class="book-card" data-genre="educational">
+                    <img src="images/wing.jpeg" alt="Cover of Wings of Fire" />
+                    <div class="card-content">
+                        <h4>Wings of Fire</h4>
+                        <p class="author">By A.P.J. Abdul Kalam & Arun Tiwari</p>
+                        <p class="price">₹299</p>
+                        <button class="Buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="book-card" data-genre="educational">
+                    <img src="https://m.media-amazon.com/images/I/81VStYnDGrL.jpg" alt="Cover of The White Tiger" />
+                    <div class="card-content">
+                        <h4>The White Tiger</h4>
+                        <p class="author">By Aravind Adiga</p>
+                        <p class="price">₹399</p>
+                        <button class="Buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+                
+                <div class="book-card" data-genre="stories hindi">
+                    <img src="images/Akbar.webp" alt="Akbar Birbal Stories Cover" />
+                    <div class="card-content">
+                        <h4>अकबर-बीरबल की अनूठी कहानियां/Akbar Birbar ki anoothi Kahaniya</h4>
+                        <p class="author">By Various Authors</p>
+                        <p class="price">₹180</p>
+                        <button class="Buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+
+                
+                <div class="book-card" data-genre="hindi">
+                    <img src="images/Godan.jpg" alt="Godaan Cover" />
+                    <div class="card-content">
+                        <h4>गोदान/Godan</h4>
+                        <p class="author">By Munshi Premchand</p>
+                        <p class="price">₹250</p>
+                        <button class="Buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+
+                
+                <div class="book-card" data-genre="poetry hindi">
+                    <img src="images/bacchan-madhushala.jpg" alt="Madhushala Cover" />
+                    <div class="card-content">
+                        <h4>मधुशाला/Madhushala</h4>
+                        <p class="author">By Harivansh Rai Bachchan</p>
+                        <p class="price">₹220</p>
+                        <button class="Buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="comic">
+                    <img src="images/harry-potter.png" alt="Harry Potter and the Deathly Hallows Cover" />
+                    <div class="card-content">
+                        <h4>Harry Potter and the Deathly Hallows</h4>
+                        <p class="author">By J.K. Rowling</p>
+                        <p class="price">₹499</p>
+                        <button class="Buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+
+                
+                <div class="book-card" data-genre="Stories">
+                    <img src="images/Life-of-pie.jpg" alt="Life of Pi Cover" />
+                    <div class="card-content">
+                        <h4>Life of Pi</h4>
+                        <p class="author">By Yann Martel</p>
+                        <p class="price">₹350</p>
+                        <button class="Buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="Philosophy">
+                    <img src="images/god.jpg" alt="Cover of The God of Small Things" />
+                    <div class="card-content">
+                        <h4>The God of Small Things</h4>
+                        <p class="author">By Arundhati Roy</p>
+                        <p class="price">₹350</p>
+                        <button class="Buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="book-card" data-genre="philosophy">
+                    <img src="images\atomic.webp" alt="Cover of Atomic Habits" />
+                    <div class="card-content">
+                        <h4>Atomic Habits</h4>
+                        <p class="author">By James Clear</p>
+                        <p class="price">₹499</p>
+                        <button class="Buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="book-card" data-genre="philosophy">
+                    <img src="images\chanaykya.webp" alt="Cover of Chanakya Neeti" />
+                    <div class="card-content">
+                        <h4>Chanakya Neeti</h4>
+                        <p class="author">By Compiled Sutras</p>
+                        <p class="price">₹299</p>
+                        <button class="Buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="book-card" data-genre="technology">
+                    <img src="images\Chatgpt.webp" alt="Cover of The ChatGPT Millionaire" />
+                    <div class="card-content">                
+                        <h4>The ChatGPT Millionaire</h4>
+                        <p class="author">By Neil Dagger</p>
+                        <p class="price">₹399</p>
+                        <button class="Buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="book-card" data-genre="political-thought">
+                    <img src="images\Rabi.webp" alt="Cover of Nationalism by Rabindranath Tagore" />
+                    <div class="card-content">
+                        <h4>Nationalism</h4>
+                        <p class="author">By Rabindranath Tagore</p>
+                        <p class="price">₹249</p>
+                        <button class="Buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="book-card" data-genre="history">
+                    <img src="images\India.jpg" alt="Cover of India, Bharat and Pakistan" />
+                    <div class="card-content">
+                        <h4>India, Bharat and Pakistan</h4>
+                        <p class="author">By J. Sai Deepak</p>
+                    <p class="price">₹599</p>
+                    <button class="Buy-now-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="book-card" data-genre="horror">
+                <img src="images\conju.webp" alt="Poster of The Conjuring" />
+                <div class="card-content">
+                    <h4>The Conjuring</h4>
+                    <p class="author">Movie Poster</p>
+        <p class="price">₹199</p>
+                    <button class="Buy-now-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="book-card" data-genre="autobiography">
+                <img src="images\wing.jpeg" alt="Cover of Wings of Fire" />
+                <div class="card-content">
+                    <h4>Wings of Fire</h4>
+                    <p class="author">By A.P.J. Abdul Kalam</p>
+        <p class="price">₹350</p>
+        <button class="Buy-now-btn">Buy Now</button>
+    </div>
+</div>
+</div>
+        </section>
+
+        
+        <section id="login">
+            <div class="form-container">
+                <h2>Login to Saraswati Book Store</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Username or Email</label>
+                        <input type="text" id="username" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required />
+                    </div>
+                    <button type="submit" class="primary-btn">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#">Register here</a></p>
+            </div>
+        </section>
+
+        <script src="first.js"></script>
+    </body>
+</html>
